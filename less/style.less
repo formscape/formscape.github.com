@@ -1,75 +1,85 @@
-@import "bootstrap/bootstrap.less";
+
+@font-face { font-family: font-light; src: url('../fonts/font-light.woff'); }
+@font-face { font-family: font-bold; src: url('../fonts/font-bold.woff'); }
+
+html {
+  background: url(../img/bg-full.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 body {
-  padding-top: 60px;
-  padding-bottom: 40px;
+	margin: 0;
+	padding: 0;
+	font-family: "font-light", Elena, Georgia, serif;
 }
 
-@import "bootstrap/responsive.less";
-
-
-/* ===== Primary Styles ========================================================
-   Author:
-   ========================================================================== */
-
-#fill1 {
-	margin-top: 20px;
-	height: 122px;
-	background-color: #BAB497;
-	.border-radius(6px 6px 0 0);
+.header {
+  position: relative;
+  background-color: #6e6459;
+  top: 80px;
+  left: 0px;
+  width: 425px;
+  height: 90px;
+  box-shadow: 0 0 8px rgba(0,0,0,.2);
+  color: #ffffff;
+  margin-bottom: 120px;
 }
 
-#fill2 {
-	height: 122px;
-	background-color: #E8E4C0;
+.header .logo-left {
+  font-family: "font-bold", Elena, Georgia, serif;
+  font-size: 28pt;
+  letter-spacing: 6px;
+  padding-left: 100px;
+  float: right;
+  padding-top: 20px;
+  padding-right: 20px;
 }
 
-#main {
-	background-color: #EDEAE1;
-	color: #666666;
-}
-
-#main #left {
-	padding: 30px;
-	bottom: 0px;
-}
-
-#main #left h1 {
-	color: #666666;
-	font-size: 42px;
-	font-weight: normal;
-}
-
-#main #left h3 {
-	color: #666666;
-	font-size: 20px;
-	font-weight: normal;
+.header .logo-right {
+  font-family: "font-light", Elena, Georgia, serif;
+  font-size: 28pt;
+  letter-spacing: 6px;
+  left: 445px;
+  position: absolute;
+  top: 20px;
 }
 
 
-#main #right {
-	padding: 30px;
+.section {
+  padding-left: 45px;
+  width: 460px;
+  color: #262527;
 }
 
-#main #right p {
-	margin-bottom: 25px;
+.section h2 {
+  font-family: "font-bold", Elena, Georgia, serif;
+  color: #6e6459;
+  font-size: 20	pt;
+  margin-bottom: 0px;
 }
 
-#main a {
-	color: #6B6755;
+.section p {
+  font-size: 12pt;
 }
 
-#footer {
-	padding: 30px;
-	height: 162px;
-	background-color: #D79A7C;
-	color: white;
-	.border-radius(0 0 6px 6px);
+.highlights {
+  position: absolute;
+  bottom: 80px;
+  right: 0px;
+  height: 120px;
+  width: 640px ;
+  background-color: #d2c6c0;
+  box-shadow: 0 0 8px rgba(0,0,0,.2);
 }
 
-
-
-
+.highlights .image {
+	padding-left: 10px;
+	padding-top: 10px;
+	float: left;
+}
 
 
 
