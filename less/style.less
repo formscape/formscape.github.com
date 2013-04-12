@@ -26,11 +26,11 @@ body {
   box-shadow: 0 0 8px rgba(0,0,0,.2);
   color: #ffffff;
   margin-bottom: 80px;
+  font-size: 36px;
 }
 
 .header .logo-left {
   font-family: "font-bold", Elena, Georgia, serif;
-  font-size: 36px;
   letter-spacing: 6px;
   padding-left: 100px;
   float: right;
@@ -40,7 +40,6 @@ body {
 
 .header .logo-right {
   font-family: "font-light", Elena, Georgia, serif;
-  font-size: 36px;
   letter-spacing: 6px;
   left: 445px;
   position: absolute;
@@ -81,6 +80,9 @@ body {
 	float: left;
 }
 
+img {
+  max-width: 100%;
+}
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
@@ -93,4 +95,29 @@ body {
 		bottom: 20px;
 	}
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.header {
+		height: 100px;
+		font-size: 50px;
+	}
+	.section {
+		width: 600px;
+	}
+	.section h2 {
+		font-size: 36px;
+	}
+
+	.section p {
+		font-size: 28px;
+	}
+
+	.header {
+	}
+
+	.highlights {
+	}
+}
+
 
